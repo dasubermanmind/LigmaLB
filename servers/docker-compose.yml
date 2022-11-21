@@ -1,0 +1,27 @@
+
+version: '3'
+services:
+  test1:
+    image: server
+    environment:
+      - APP=server_one
+    ports:
+      - "8081:5000"
+  test2:
+    image: server
+    environment:
+      - APP=server_one
+    ports:
+      - "8082:5000"
+  foobar1:
+    image: server
+    environment:
+      - APP=server_one
+    ports:
+      - "9081:5000"
+  foovar2:
+    image: server
+    environment:
+      - APP=server_one
+    ports:
+      - "9082:5000"
